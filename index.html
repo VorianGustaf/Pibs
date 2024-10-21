@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+</head>
+<body>
+    <nav>
+        <a href="#"onclick="tampilconten('biodata')">Biodata</a>
+        <a href="#"onclick="tampilconten('pendidikan')">Pendidikan</a>
+        <a href="#"onclick="tampilconten('Keahlian')">Keahlihan</a>
+        <a href="#"onclick="tampilconten('publikasi')">Publikasi</a>
+    </nav>
+    <section id="content">
+
+    </section>
+    <aside></aside>
+</body>
+<script >function tampilconten(bagian){
+    const conten = document.getElementById('content'); 
+    let tampil ='';
+    switch (bagian){
+        case 'biodata':
+            tampil =`<h2>Biodata</h2>
+            <p>Nim:2021081014</p> 
+            <p>Nama:Vorian gustaf</p>
+            <p>Agama:Kristen</p>
+            <P>Tanggal Lahir:30 April</P>
+            <p>Tempat Lahir:Jakarta</p>` 
+            break;
+            case 'pendidikan':
+            tampil =`<h2>pendidikan</h2>
+            <p>lulusan SD Katolik Ricci 2  2012  </p>
+            <p>lulusan SMP Katolik Ricci 2 2017 </p>
+            <p>lulusan SMA Katolik Ricci 2 2019 </p>
+            <p>Universitas Pembagunan Jaya 2021 - sekarang</p>` 
+            break;
+            case 'Keahlian':
+            tampil =`<h2>Kehalian</h2>
+            <p>Bisa Mengunakan Adobe Primer Pro (video editing)</p>
+            <p> HTML,CSS,JavaScrip</p>
+            <p></p>` 
+            break;
+            case 'publikasi':
+            tampil =`<h2>Publikasi</h2>
+            <p>GitHUB</p>
+            <p></p>
+            <p></p>` 
+            break;
+    }
+    conten.innerHTML = tampil;
+    };</script>
+<footer></footer>
+</html>
