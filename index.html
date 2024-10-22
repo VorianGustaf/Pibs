@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-</head>
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="profile-info">
+          <img src="foto.jpg" alt="Foto Profil" class="profile-photo">
+          <h1 class="header-title">Profil Mahasiswa</h1>
+        </div>
+    </header>
 <body>
-    <nav>
+  <main class="content">
+    <nav class="nav">
         <a href="#"onclick="tampilconten('biodata')">Biodata</a>
         <a href="#"onclick="tampilconten('pendidikan')">Pendidikan</a>
         <a href="#"onclick="tampilconten('Keahlian')">Keahlihan</a>
         <a href="#"onclick="tampilconten('publikasi')">Publikasi</a>
     </nav>
-    <section id="content">
-
+    <section class="section" id="section">
+    
     </section>
-    <aside></aside>
-</body>
-<script >function tampilconten(bagian){
-    const conten = document.getElementById('content'); 
+
+    <aside class="aside">
+      <h2>Hobi:</h2>
+      <p>Masak</p>
+      <p>videogame</p>
+      <p>bersepeda</p>
+    </aside>
+  </main>
+  <script >function tampilconten(bagian){
+    const conten = document.getElementById('section'); 
     let tampil ='';
     switch (bagian){
         case 'biodata':
-            tampil =`<h2>Biodata</h2>
+            tampil =`<h2>Biodata</h2> <br>
             <p>Nim:2021081014</p> 
+            <br>
             <p>Nama:Vorian gustaf</p>
+            <br>
             <p>Agama:Kristen</p>
+            <br>
             <P>Tanggal Lahir:30 April</P>
+            <br>
             <p>Tempat Lahir:Jakarta</p>` 
             break;
             case 'pendidikan':
             tampil =`<h2>pendidikan</h2>
+            <br>
             <p>lulusan SD Katolik Ricci 2  2012  </p>
+            <br>
             <p>lulusan SMP Katolik Ricci 2 2017 </p>
+            <br>
             <p>lulusan SMA Katolik Ricci 2 2019 </p>
+            <br>
             <p>Universitas Pembagunan Jaya 2021 - sekarang</p>` 
             break;
             case 'Keahlian':
             tampil =`<h2>Kehalian</h2>
+            <br>
             <p>Bisa Mengunakan Adobe Primer Pro (video editing)</p>
+            <br>
             <p> HTML,CSS,JavaScrip</p>
             <p></p>` 
             break;
             case 'publikasi':
             tampil =`<h2>Publikasi</h2>
+            <br>
             <p>GitHUB</p>
             <p></p>
             <p></p>` 
@@ -51,5 +78,18 @@
     }
     conten.innerHTML = tampil;
     };</script>
-<footer></footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://twitter.com/akun" target="_blank">Twitter: @akun</a>
+          <a href="https://instagram.com/akun" target="_blank">Instagram: @akun</a>
+        </div>
+        <div class="copyright">
+          <p>&copy; Copyright 2020. All Rights Reserved</p>
+          <p>Nama Web</p>
+          <p>Slogan/Keterangan/Informasi Web</p>
+        </div>
+      </div>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.header-title {
+  font-size: 24px;
+}
+
+/* Content styles */
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav, .section, .aside {
+  background-color: #fff;
+  padding: 20px;
+  flex-basis: 25%;
+}
+
+.nav {
+  flex-basis: 25%;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.section {
+  flex-basis: 50%;
+  border-right: 1px solid #ccc;
+}
+
+.aside {
+  flex-basis: 25%;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  text-align: right;
+}
+
+.copyright p {
+  margin-bottom: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .nav, .section, .aside {
+    flex-basis: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    text-align: left;
+  }
+}
